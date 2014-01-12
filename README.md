@@ -43,7 +43,7 @@ Formater 是用于格式化消息,因为MHT的消息导出中
 有HTML标签,所以需要 Formater 用于规整消息格式.
 
 默认的Formater 会去除字体样式,将Image的引用转换为
-`<img src="">`, 会将引用的数据从新命名,使用sha作为文件名,
+`<img src="">`, 会将引用的数据从新命名,使用md5作为文件名,
 根据 ContentType 采用相应的后缀名.
 
 Formater 能够做什么
