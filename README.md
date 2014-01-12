@@ -8,6 +8,11 @@ QQ 导出消息解析器
 需要注意的是,QQ导出的MHT没有谁发言这样的信息,所以导出的数据中只有 `IsBySelf`
 用于判断是否是自己发言.
 
+截图
+----
+
+![QQ 导出消息解析器](https://raw2.github.com/wenerme/QQExportMessageParser/master/screenshot.png "QQ 导出消息解析器")
+
 导出JSON的格式
 -------------
 

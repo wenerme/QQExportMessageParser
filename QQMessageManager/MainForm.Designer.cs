@@ -67,7 +67,7 @@
 			// 打开MHTToolStripMenuItem
 			// 
 			this.打开MHTToolStripMenuItem.Name = "打开MHTToolStripMenuItem";
-			this.打开MHTToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.打开MHTToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.打开MHTToolStripMenuItem.Tag = "Open";
 			this.打开MHTToolStripMenuItem.Text = "打开MHT";
 			this.打开MHTToolStripMenuItem.Click += new System.EventHandler(this.RunCommand);
@@ -88,6 +88,7 @@
             this.Content});
 			this.MSGDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.MSGDataGridView.Location = new System.Drawing.Point(0, 25);
+			this.MSGDataGridView.MultiSelect = false;
 			this.MSGDataGridView.Name = "MSGDataGridView";
 			this.MSGDataGridView.ReadOnly = true;
 			this.MSGDataGridView.RowTemplate.Height = 23;
@@ -126,6 +127,7 @@
             this.labelAbout});
 			this.statusStrip1.Location = new System.Drawing.Point(0, 275);
 			this.statusStrip1.Name = "statusStrip1";
+			this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
 			this.statusStrip1.Size = new System.Drawing.Size(449, 22);
 			this.statusStrip1.TabIndex = 2;
 			this.statusStrip1.Text = "statusStrip1";

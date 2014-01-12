@@ -39,10 +39,12 @@ namespace QQMessageManager
 		{
 			if (filepath == null)
 			{
-				var dialog = new OpenFileDialog();
-				dialog.CheckFileExists = true;
-				dialog.Filter = "MHT 文件格式(*.mht)|*.mht";
-				dialog.InitialDirectory = Directory.GetCurrentDirectory();
+				var dialog = new OpenFileDialog
+				{
+					CheckFileExists = true,
+					Filter = "MHT 文件格式(*.mht)|*.mht",
+					InitialDirectory = Directory.GetCurrentDirectory()
+				};
 				if (dialog.ShowDialog() != DialogResult.OK)
 					return;
 				filepath = dialog.FileName;
@@ -51,19 +53,18 @@ namespace QQMessageManager
 			var file = new FileStream(filepath, FileMode.Open, FileAccess.Read);
 			var reader = new StreamReader(file);
 			string content = reader.ReadToEnd();
-			//var part = MIMEPart.ParseContent(content);
 			MHTContainer mht = MHTContainer.ParseContent(content);
 			MSGContainer msg = MSGContainer.FromMHT(mht);
 			MSG = msg;
 
 			new MSGFormater().Format(msg);
 			labelMessageTarget.Text = "消息对象: " + msg.To;
+
 			BindDataList(msg.Messages);
 		}
 
 		private void RunCommand(object sender, EventArgs e)
 		{
-			var ctr = sender as Control;
 			string tag = null;
 			if (sender is Control)
 			{
