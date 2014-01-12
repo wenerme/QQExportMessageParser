@@ -150,6 +150,7 @@
 			this.labelAbout.Name = "labelAbout";
 			this.labelAbout.Size = new System.Drawing.Size(74, 17);
 			this.labelAbout.Text = "作者: wener";
+			this.labelAbout.Click += new System.EventHandler(this.labelAbout_Click);
 			// 
 			// MainForm
 			// 

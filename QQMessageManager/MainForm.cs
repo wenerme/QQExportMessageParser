@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
@@ -116,6 +117,11 @@ namespace QQMessageManager
 						, MessageBoxIcon.Error);
 					break;
 			}
+		}
+
+		private void labelAbout_Click(object sender, EventArgs e)
+		{
+			Process.Start("http://blog.wener.me");
 		}
 	}
 }
