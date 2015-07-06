@@ -11,7 +11,7 @@ QQ 导出消息解析器
 截图
 ----
 
-![QQ 导出消息解析器](https://raw2.github.com/wenerme/QQExportMessageParser/master/screenshot.png "QQ 导出消息解析器")
+![QQ 导出消息解析器](https://raw.githubusercontent.com/wenerme/QQExportMessageParser/master/screenshot.png "QQ 导出消息解析器")
 
 导出JSON的格式
 -------------
